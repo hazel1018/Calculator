@@ -9,27 +9,30 @@ int h, a, b;
 void no();
 int main()
 {
-	cout << "[1 Addition]\n";
-	cout << "[2 Subtraction]\n";
-	cout << "[3 Divition]\n";
-	cout << "[4 Multiplication]\n";
+	cout << "\n\tSimple Calculator\n\n";
+	cout << "[1] Addition\n";
+	cout << "[2] Subtraction\n";
+	cout << "[3] Divition\n";
+	cout << "[4] Multiplication\n\n";
 
-	cout << "Enter a Number: ";
+	cout << "Enter a Number : ";
 	cin >> h;
 
 	switch (h)
 	{
 	case 1:
 	{
-		cout << "Enter Firstnumber\n";
+		cout << "\n\t ADDITION";
+		cout << "\n\nEnter First Number : ";
 		cin >> a;
-		cout << "Enter Secondnumber\n";
+		cout << "Enter Second Number : ";
 		cin >> b;
 
-		aa = a + b;
-		cout << "Sum = " << h;
+		h = a + b;
+		cout << "\nSum = " << h;
 
-		cout << "\n\nwoud you like go in operator again?\n 1[yes] 2[no]\n";
+				cout << "\n\nWould you like go in operator again?\n[1] Yes [2] No\n";
+				cout << "Answer : ";
 		cin >> h;
 		system("cls");
 		if (h == 1)
@@ -44,15 +47,17 @@ int main()
 	}
 	case 2:
 	{
-		cout << "Enter Firstnumber\n";
+		cout << "\n\t SUBTRACTION";
+		cout << "\n\nEnter First Number : ";
 		cin >> a;
-		cout << "Enter Secondnumber\n";
+		cout << "Enter Second Number : ";
 		cin >> b;
 
 		h = a - b;
-		cout << "Subtract = " << h;
+		cout << "\nDifference = " << h;
 
-		cout << "\n\n you like go in operator again? 1[yes] 2[no]\n";
+				cout << "\n\nWould you like go in operator again?\n[1] Yes [2] No\n";
+				cout << "Answer : ";
 		cin >> h;
 		system("cls");
 		if (h == 1)
@@ -67,18 +72,21 @@ int main()
 	}
 	case 3:
 	{
-		cout << "Enter Firstnumber\n";
+		cout << "\n\t DIVISION";
+		cout << "\n\nEnter First Number : ";
 		cin >> a;
-		cout << "Enter Secondnumber\n";
+		cout << "Enter Second Number : ";
+		cin >> b;
 		if (h == 1)
 		{
 			main();
 		}
 
 		h = a / b;
-		cout << "Divide = " << h;
+		cout << "\nQoutient = " << h;
 
-		cout << "\n\nwoud you like go in operator again? 1[yes] 2[no]\n";
+				cout << "\n\nWould you like go in operator again?\n[1] Yes [2] No\n";
+				cout << "Answer : ";
 		cin >> h;
 		system("cls");
 
@@ -94,15 +102,17 @@ int main()
 	}
 	case 4:
 	{
-		cout << "Enter Firstnumber\n";
+		cout << "\n\t MULTIPLICATION";
+		cout << "\n\nEnter First Number : ";
 		cin >> a;
-		cout << "Enter Secondnumber\n";
+		cout << "Enter Second Number : ";
 		cin >> b;
 
 		h = a * b;
-		cout << "Multiply = " << h;
+		cout << "\nProduct = " << h;
 
-		cout << "\n\nwoud you like go in operator again? 1[Yes] 2[no]\n";
+				cout << "\n\nWould you like go in operator again?\n[1] Yes [2] No\n";
+				cout << "Answer : ";
 		cin >> h;
 		system("cls");
 		if (h == 1)
@@ -119,5 +129,5 @@ int main()
 }
 void no()
 {
-	cout << "thankyou for using me.";
+	cout << "Thankyou!";
 }
